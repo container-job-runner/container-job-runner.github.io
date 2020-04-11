@@ -9,9 +9,13 @@
 <body>
   <div class=installers>
     <div class=installer>
-      <div class="os-label"> Fedora: </div>
+      <div class="label"> Fedora: </div>
       <div class="command">
         curl -s https://container-job-runner.github.io/installers/fedora.sh | bash
+      </div>
+      <div class="label"> Dependencies: </div>
+      <div class="command">
+        sudo dnf install wget podman
       </div>
     </div>
   </div>

@@ -42,6 +42,6 @@ mkdir -p "$HOME/$BIN_DIR"
 rm -rf "$HOME/.local/lib/cjr"
 # -- 3. download, untar, and add to path
 cd "$HOME/.local/lib"
-wget --quiet $URL
+wget --quiet --output-document=$PACKAGE $URL 
 tar -zxf "$PACKAGE.tar.gz"
 ln -fs  "$HOME/$LIB_DIR/cjr/bin/cjr" "$HOME/$BIN_DIR/cjr"

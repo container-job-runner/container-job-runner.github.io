@@ -36,8 +36,8 @@ URL="https://github.com/container-job-runner/cjr/releases/download/$TAG/$PACKAGE
 
 # == install ===================================================================
 # -- 1. create directories
-mkdir "$HOME/$LIB_DIR"
-mkdir "$HOME/$BIN_DIR"
+mkdir -p "$HOME/$LIB_DIR"
+mkdir -p "$HOME/$BIN_DIR"
 # -- 2. remove any previous install
 rm -rf "$HOME/.local/lib/cjr"
 # -- 3. download, untar, and add to path

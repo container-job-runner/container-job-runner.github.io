@@ -38,8 +38,10 @@ URL="https://github.com/container-job-runner/cjr/releases/download/$TAG/$PACKAGE
 # -- 1. create directories
 mkdir "$HOME/$LIB_DIR"
 mkdir "$HOME/$BIN_DIR"
-# -- 2. download, untar, and add to path
+# -- 2. remove any previous install
+rm -rf "$HOME/.local/lib/cjr"
+# -- 3. download, untar, and add to path
 cd "$HOME/.local/lib"
 wget $URL
-tar -zxvf "$PACKAGE.tar.gz"
-ln -fs  "$HOME/$LIB_DIR/$PACKAGE/bin/cjr" "$HOME/$BIN_DIR/$PACKAGE/cjr"
+tar -zxf "$PACKAGE.tar.gz"
+ln -fs  "$HOME/$LIB_DIR/cjr/bin/cjr" "$HOME/$BIN_DIR/cjr"

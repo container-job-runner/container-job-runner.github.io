@@ -21,12 +21,12 @@ PACKAGE=$1
 
 # -- default tag ---------------------------------------------------------------
 if [ -n $TAG ] ; then
-  TAG='v0.2.1-alpha'
+  TAG='v0.3.0-alpha'
 fi
 
 # -- default version -----------------------------------------------------------
 if [ -n $PACKAGE ] ; then
-  PACKAGE='cjr-v0.2.1-linux-x64'
+  PACKAGE='cjr-v0.3.0-linux-x64'
 fi
 
 # -- default parameters for Fedora ---------------------------------------------

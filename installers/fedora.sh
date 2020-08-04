@@ -21,12 +21,12 @@ PACKAGE=$1
 
 # -- default tag ---------------------------------------------------------------
 if [ -n $TAG ] ; then
-  TAG='v0.3.0-alpha'
+  TAG='v0.4.1-alpha'
 fi
 
 # -- default version -----------------------------------------------------------
 if [ -n $PACKAGE ] ; then
-  PACKAGE='cjr-v0.3.0-linux-x64'
+  PACKAGE='cjr-v0.4.1-linux-x64'
 fi
 
 # -- default parameters for Fedora ---------------------------------------------
@@ -45,5 +45,5 @@ cd "$HOME/.local/lib"
 wget --quiet --output-document="$PACKAGE.tar.gz" $URL
 tar -zxf "$PACKAGE.tar.gz"
 ln -fs  "$HOME/$LIB_DIR/cjr/bin/cjr" "$HOME/$BIN_DIR/cjr"
-# -- 4. configure for fedora
+# -- 4. configure selinux for fedora
 cjr config:set --selinux true

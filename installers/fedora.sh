@@ -46,4 +46,4 @@ wget --quiet --output-document="$PACKAGE.tar.gz" $URL
 tar -zxf "$PACKAGE.tar.gz"
 ln -fs  "$HOME/$LIB_DIR/cjr/bin/cjr" "$HOME/$BIN_DIR/cjr"
 # -- 4. configure selinux for fedora
-cjr config:set --selinux true
+cjr config:set --quiet --selinux true

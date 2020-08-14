@@ -1,0 +1,12 @@
+The Shell Command
+=================================
+
+Now that you have the *fedora-sc* stack, let’s use it to develop and run code. The shell command can be used to start an interactive shell that is running inside the containerized Linux operating system. For example, by running the command
+
+```console
+$ cjr shell --stack=fedora-sc
+```
+
+You will start an interactive shell that is running inside the fedora stack. You now have access to all the software that is are installed in the stack. For the moment, this shell has no access to your local files. Try running a few commands or starting an interactive python REPL with the command `python`.
+
+**Important:** Any changes you make to the Linux OS using this shell will be discarded once you type exit. In fact, when you re-run the shell command you will always find exactly the same OS that you had when you first ran the shell the command.

@@ -1,0 +1,24 @@
+Theia
+===========================
+
+For anyone who prefers a richer environment for developing code, cjr has special commands for starting [Theia](https://theia-ide.org/), the great new open source IDE that can run existing VS code plugins. 
+
+Theia comes preinstalled in the *fedora-sc* stack. Let’s start Theia using the command
+
+```console
+$ cjr theia:start --here --stack=fedora-sc
+```
+
+After about ten seconds Theia will open up in your default browser. Try creating and editing some files. You can also run your code using Theia's build in terminal. We configured Theia so that it already has support for python, c, c++, and Fortran and you can add extensions to add support for more languages.
+
+The commands for Theia are identical to those for jupyter. You can view all the running theia servers using 
+
+```console
+$ cjr theia:ls
+```
+
+And you can stop the theia server using 
+
+```console
+$ cjr theia:stop --here
+```

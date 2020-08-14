@@ -1,17 +1,27 @@
-Running Programs: Hello World
+---
+layout: tutorial_local_dev
+title:  Running Code
+categories: tutorials local-dev
+slug: running-code
+permalink: /:categories/:title
+date: 2014-08-14 00:00:05
+---
+
+
+Running Code: Hello World
 ====================================
 
 By running the shell command with the flag `--here`, you can modify the files and subfolders that are inside the directory where you ran cjr. This means that we can use cjr to run and compile code that is saved on your local machine. 
 
-The *fedora-sc* stack has Python, Julia, R, and compilers for c, c++, and Fortran. 
-Thanks to container technology, you can run all of these languages even if they are not installed on your host system.
+The *fedora-sc* stack has Python, Julia, and R installed, as well as compilers for c, c++, and Fortran. 
+Thanks to container technology, you can run programs written in all of these languages even if they language or compiler is not installed on your host system.
 Below we show how to use cjr to run example hello world programs in [Python](#1.-Python), [c++](#2.-c++), [Julia](#3.-Julia), and [Fortran](#2.-Fortran).
 
 **Tip:** If you like working in a terminal then you can also use the shell command to develop your code using an editor like vim or emacs. 
 
 ## 1. Python
 
-In the current directory, create the file hello-world.py
+In the current directory, create the file hello-world.py that contains
 
 ```python
 print("Hello World!")
@@ -27,7 +37,7 @@ Hello World!
 
 ## 2. c++
 
-In the current directory, create the file hello-world.cpp
+In the current directory, create the file hello-world.cpp  that contains
 
 ```cpp
 #include <iostream>
@@ -48,7 +58,7 @@ Hello World!
 ```
 
 ## 3. Julia
-In the current directory, create the file hello-world.jl
+In the current directory, create the file hello-world.jl that contains
 
 ```julia
 println("Hello World!")
@@ -63,7 +73,7 @@ Hello World!
 ```
 
 ## Fortran
-In the current directory, create the file hello-world.f90
+In the current directory, create the file hello-world.f90 that contains
 
 ```fortran
 program hello

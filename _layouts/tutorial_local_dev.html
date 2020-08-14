@@ -1,0 +1,12 @@
+---
+layout: tutorial
+ttype: "localdev"
+---
+
+<div id="tutorial-nav">
+{% for post in site.categories.local-dev reversed %}
+    <a href="{{post.url}}" style="{% if post.title == page.title %}font-weight:bold; color: #29ABE2; border-left: 2px solid #29ABE2{% endif %}"> {{ post.title }} </a>
+{% endfor %}
+</div>
+
+{{ content }}

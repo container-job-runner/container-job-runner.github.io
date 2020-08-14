@@ -1,0 +1,30 @@
+---
+layout: base
+---
+
+<div id=header>
+    <div class=frame>
+        {% include header.html %}
+        <div id="splash">
+            <img class="logo" src="/assets/logo.png">
+            <div class="text">
+                <div class="bold"> Container Job Runner </div>
+                - A friendly way to
+                <div class="bold italic"> develop </div>
+                and
+                <div class="bold italic"> run </div>
+                code in containers.
+            </div>
+        </div>
+    </div>
+</div>
+<div class=frame>
+    <div id=home-content>
+        <div class="slogan">
+            Designed for <div class="bold italic">scientific computing</div> and <div class="bold italic">data science</div>.
+        </div>
+        {{ content }}
+    </div>
+    {% include copywrite.html %}
+</div>
+</div>

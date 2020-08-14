@@ -1,3 +1,12 @@
+---
+layout: tutorial_local_dev
+title:  Environment Variables
+categories: tutorials local-dev
+slug: environment-variables
+permalink: /:categories/:title
+date: 2014-08-14 00:00:10
+---
+
 Environmental Variables
 ===============================
 
@@ -22,5 +31,5 @@ are equivalaent to
 ```console
 $ cjr shell --here --stack=fedora-sc
 $ cjr jupyter:start --here --stack=fedora-sc
-$ cjr theia:start --here --stack=fedora=sc
+$ cjr theia:start --here --stack=fedora-sc
 ```

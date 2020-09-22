@@ -10,9 +10,9 @@ date: 2014-09-14 00:00:04
 Copying Job Results
 =======================
 
-You can copy job results back to your host project directory, using the command `cjr job:cp ID`. To monitor the progress of the copy operation, add the optional flag `--verbose`. 
+To copy job output files back to their respective project directory, you can use the command `cjr job:cp ID`. If you want to monitor the progress of the copy operation, add the optional flag `--verbose`. 
 
-Let's copy the results of the last job we completed in the third tutorial step by running the following command; note again that your ID will be different. If you forgot the id, use `cjr job:ls` to find its value.
+Let's copy the results of the async job you ran in step three of this tutorial; if you forgot the id, use `cjr job:ls` to find its value.  The command for copying is show below; note again that your ID will be different. 
 ```console
 $ cjr job:cp 1bf84f7 --verbose
 -- rsync Output: Volume to Host ------------------------------------------------
@@ -23,7 +23,7 @@ output-1600506832.txt
 sent 187 bytes  received 38 bytes  450.00 bytes/sec
 total size is 281  speedup is 1.25
 ```
-Your project directory will now contain the output files from both your jobs.
+Your project directory will now contain the output files from both the jobs you ran earlier.
 ```console
 $ ls
 output-1600506296.txt	output-1600506832.txt	script.py

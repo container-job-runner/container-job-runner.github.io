@@ -17,7 +17,7 @@ sleeping for 5 seconds.
 writing output file.
 exiting.
 ```
-By default, cjr runs jobs synchronously. Once the jobs completes, cjr will automatically sync any changes to the project folder. Therefore, if you type `ls` you will see the script's output file.
+By default, cjr runs jobs synchronously. Once the sync job completes, cjr will automatically sync the job files and the project folder. If you type `ls` you will see the script's output file.
 ```console
 $ ls
 output-1600506296.txt	script.py
@@ -43,7 +43,7 @@ sleeping for 60 seconds.
 writing output file.
 exiting.
 ```
-Once you detach once from a job, cjr will no longer automatically sync the result, even if you reattach amd let the job complete. You can verify this by waiting until the job completes, and then running ls which will only show the output file from your previous job. Later in this tutorial we will see how to manually sync job results.
+Once you detach once from a job, cjr will no longer automatically sync the result, even if you reattach and let the job complete. You can verify this by waiting until the job completes, and then running ls (you will only see the output file from your previous job). Later in this tutorial we will see how to manually sync job results.
 
 **Remark:** Once a job exits, you will no longer be able to attach.
 
@@ -59,7 +59,7 @@ If there are certain files that you do not want to be copied from the project di
 .git
 .gitignore
 ```
- The format for this file is the same as the format for an rsync include file.
+ The format for this file is the same as the format for an rsync exclude file.
 
 ## A Convenient Shorthand
 

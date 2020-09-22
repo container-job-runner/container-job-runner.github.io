@@ -26,7 +26,7 @@ ID               STACKNAME           COMMAND                                 STA
 91593e3c5fcc     fedora-sc           python3 script.py 5                     Exited (0) 14 hours ago            
 ================================================================================================================
 ```
-By default, this command shows the ID of a job, the stack it ran in, the command, and the status. The ID propery of a job serves as an identifier that you will pass as an argument to certain cjr commands whenever you want to interact with a job. 
+By default, this command shows the ID of a job, the stack it ran in, the command, and the status. The ID property of a job serves as an identifier that you can pass as an argument to other cjr commands whenever you want to interact with a job. 
 
 To only see running jobs add the flag `--running`. Similarly, the flag `--exited` only shows exited jobs.
 If you want to see all the properties of a job add the flag `--verbose`.

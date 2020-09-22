@@ -10,7 +10,7 @@ date: 2014-08-14 00:00:10
 Environmental Variables
 ===============================
 
-Advanced users who are dynamically switching between different stacks and project directories, may find it useful to set the default stack and project directories using the environment variables.
+Advanced users who are dynamically switching between different stacks and project directories, may find it useful to set the default stack and project directories using environment variables.
 
 The relevant environment variables are:
 - `PROJECTROOT`: the parent directory that contains all the relevant files; cjr bind automatically to this folder.

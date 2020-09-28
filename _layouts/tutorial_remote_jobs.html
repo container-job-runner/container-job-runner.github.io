@@ -1,0 +1,17 @@
+---
+layout: tutorial
+---
+
+<div id="tutorial-nav">
+    {% for post in site.categories.remote-jobs reversed %}
+        <div class="nav-item{% if post.title == page.title %} active{% endif %}">
+            <span> {{ forloop.index0 | plus:1 }}. </span>
+            <a href="{{post.url}}"> {{ post.title }} </a>
+        </div>    
+    {% endfor %}
+</div>
+<div id="tutorial-text">
+    <div id="tutorial-text-padding">
+        {{ content }}
+    </div>
+</div>

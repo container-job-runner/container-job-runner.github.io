@@ -52,3 +52,11 @@ cjr/0.4.1 darwin-x64 node-v12.16.1
 ```
 
 **TIP**: before trying cjr, make sure you have a basic idea of how to a terminal and commands like `cd`, `ls`, `pwd`.
+
+## SELinux (linux only)
+
+If SELinux is enabled on your computer, then you must also run the command
+```console
+$ cjr config:set --selinux=true
+```
+If you forget to run this command and have selinux enabaled, then you will run into file permissson errors when you try to access local files using cjr.
